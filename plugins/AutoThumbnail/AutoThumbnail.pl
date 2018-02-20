@@ -126,7 +126,7 @@ sub create_thumbnail_img {
 
         my $_file_name = $file_name;
         my $_file_ext  = $file_ext;
-        $_file_name    =~ s/\.$_file_ext$//;
+        $_file_name    =~ s/\.$_file_ext$//i;
 
         my $thumb_suffix = (($suffix_str) ? $suffix_str : $thumb_w . "x" . $thumb_h);
         if( $suffix_str && ($i >= 1) ){ $thumb_suffix .= $i; }
