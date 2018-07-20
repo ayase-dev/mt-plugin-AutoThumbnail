@@ -76,6 +76,7 @@ sub _cb_cms_post_save_asset {
             create_thumbnail_img( $i, $site_path, $site_url, $file_path, $file_name, $file_ext, @options[$i], $alt_suffix );
         }
     }
+1;
 }
 
 sub _cb_tp_header {
